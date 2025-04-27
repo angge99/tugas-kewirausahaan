@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Template Dashboard - UX Ajaib</title>
+  <link rel="stylesheet" href="landing-style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(45deg, #1f3c61, #006cff);
+      color: #fff;
+      overflow-x: hidden;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      color: #ddd;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 10px #fff, 0 0 20px #008cff, 0 0 30px #00d4ff; }
+      100% { text-shadow: 0 0 30px #fff, 0 0 40px #008cff, 0 0 50px #00d4ff; }
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .image-box img:hover {
+      transform: scale(1.1);
+    }
+
+    .info-box {
+      max-width: 500px;
+      text-align: left;
+      animation: slideUp 1s ease;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .info-box h2 {
+      margin-bottom: 15px;
+      color: #00d4ff;
+      font-size: 2rem;
+    }
+
+    .info-box ul {
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #00d4ff;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #008cff;
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #fff; /* Ubah warna teks footer menjadi putih cerah */
+      font-size: 1rem; /* Sesuaikan ukuran font jika perlu */
+      animation: fadeIn 2s ease;
+    }
+
+    footer a {
+      color: #fff; /* Tautan juga menjadi putih cerah */
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #00d4ff; /* Ubah warna tautan saat hover */
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Parallax background effect */
+    .parallax {
+      background: url('tengah-LP.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parallax .container {
+      position: relative;
+      z-index: 2;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="parallax">
+    <div class="container">
+      <header>
+        <h1>Template Dashboard Profesional</h1>
+        <p>Solusi cepat untuk membuat dashboard admin modern & responsif.</p>
+      </header>
+
+      <div class="main-content">
+        <div class="image-box">
+          <img src="template3.png" alt="Template Dashboard">
+        </div>
+        <div class="info-box">
+          <h2>Fitur Unggulan:</h2>
+          <ul>
+            <li>✅ Desain clean & minimalis</li>
+            <li>✅ Fully responsive (mobile-ready)</li>
+            <li>✅ Mudah diintegrasikan ke backend</li>
+            <li>✅ Support Tailwind & Bootstrap</li>
+          </ul>
+          <p class="price">Harga: <strong>Rp89.000</strong></p>
+          <a href="pembelian.html" class="cta-button">Beli Sekarang</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 UX Ajaib — Semua hak cipta dilindungi. Membangun solusi yang memudahkan perjalanan digital Anda.</p>
+    <p>Terhubung dengan kami: <a href="mailto:info@uxajaib.com">info@uxajaib.com</a> | <a href="https://www.uxajaib.com">www.uxajaib.com</a></p>
+    <p>Ikuti kami di <a href="https://www.instagram.com/uxajaib" target="_blank">Instagram</a> | <a href="https://www.linkedin.com/company/uxajaib" target="_blank">LinkedIn</a> untuk update terbaru dan tips desain.</p>
+  </footer>
+
+</body>
+</html>

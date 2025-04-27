@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Pembelian - UX Ajaib</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(45deg, #1f3c61, #006cff);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 16px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 1s ease;
+    }
+
+    .card h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .card p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #00d4ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #008cff;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Konfirmasi Pembelian</h2>
+    <p>Terima kasih telah memilih Template Dashboard Profesional dari <strong>UX Ajaib</strong>!</p>
+    <p>Silakan lanjutkan pembayaran melalui salah satu metode berikut:</p>
+    <ul>
+      <li>📱 Dana / OVO / GoPay: <strong>0857-0705-8586</strong></li>
+      <li>🏦 BCA: 1234567890 a.n. UX Ajaib Studio</li>
+    </ul>
+    <p>Setelah transfer, kirim bukti pembayaran ke email: <a href="mailto:info@uxajaib.com" style="color:#00d4ff;">info@uxajaib.com</a></p>
+    <a href="index.html" class="btn">Kembali ke Beranda</a>
+  </div>
+</body>
+</html>
